@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Testsuite" duration-ms="28802" started-at="2017-11-21T02:00:23Z" finished-at="2017-11-21T02:00:52Z">
+    <groups>
+    </groups>
+    <test name="FirefoxTest" duration-ms="28802" started-at="2017-11-21T02:00:23Z" finished-at="2017-11-21T02:00:52Z">
+      <class name="org.testJenkins.TestGrid">
+        <test-method status="PASS" signature="launchapp(java.lang.String)[pri:0, instance:org.testJenkins.TestGrid@2ef9b8bc]" name="launchapp" is-config="true" duration-ms="28152" started-at="2017-11-21T10:00:23Z" finished-at="2017-11-21T10:00:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapp -->
+        <test-method status="PASS" signature="calculatepercent()[pri:0, instance:org.testJenkins.TestGrid@2ef9b8bc]" name="calculatepercent" duration-ms="177" started-at="2017-11-21T10:00:52Z" finished-at="2017-11-21T10:00:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculatepercent -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:org.testJenkins.TestGrid@2ef9b8bc]" name="closeBrowser" is-config="true" duration-ms="438" started-at="2017-11-21T10:00:52Z" finished-at="2017-11-21T10:00:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- org.testJenkins.TestGrid -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Testsuite -->
+</testng-results>
