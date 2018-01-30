@@ -31,7 +31,8 @@ public class TestGrid {
 		//String URL = "http://springmvc-wfproject5.openshift.axies.org/springmvc/";
 		//String Node = "http://192.168.40.73:4444/wd/hub";
 		String Node = "http://172.17.0.7:4444/wd/hub";
-		String URL = "http://tores3-test.router.default.svc.cluster.local/TORES/";
+		//String URL = "http://tores3-test.router.default.svc.cluster.local/TORES/";
+		String URL = "https://www.baidu.com.cn";
 		if (browser.equalsIgnoreCase("firefox")) {
 			System.out.println(" Executing on FireFox");
 			DesiredCapabilities cap = DesiredCapabilities.firefox();
@@ -40,7 +41,8 @@ public class TestGrid {
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 			driver.navigate().to(URL);
-			driver.manage().window().maximize();
+			System.out.println("ready to screenshot");
+			//driver.manage().window().maximize();
 		} else if (browser.equalsIgnoreCase("chrome")) {
 			System.out.println(" Executing on CHROME");
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
@@ -57,6 +59,7 @@ public class TestGrid {
 
 	@Test
 	public void calculatepercent() {
+		System.out.println("catch titile");
 		String title = driver.getTitle();
 		System.out.println(title);
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
