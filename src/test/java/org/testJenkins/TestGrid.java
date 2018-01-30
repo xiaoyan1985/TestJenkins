@@ -46,7 +46,7 @@ public class TestGrid {
 
 			driver.navigate().to(URL);
 			System.out.println("ready to screenshot");
-			driver.manage().window().setSize(new Dimension(3600, 3400)); 
+			//driver.manage().window().setSize(new Dimension(3600, 3400)); 
 			//driver.manage().window().maximize();
 		} else if (browser.equalsIgnoreCase("chrome")) {
 			System.out.println(" Executing on CHROME");
@@ -68,14 +68,14 @@ public class TestGrid {
 		System.out.println("catch titile");
 		String title = driver.getTitle();
 		System.out.println(title);
-		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        try {
-            FileUtils.copyFile(scrFile, new File("screenshot.png"));
-            System.out.println("screenshot Finish");
-        } catch (IOException e) {
-            System.out.println("Can't save screenshot");
-            e.printStackTrace();
-        } 
+		//File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        //try {
+            //FileUtils.copyFile(scrFile, new File("screenshot.png"));
+            //System.out.println("screenshot Finish");
+        //} catch (IOException e) {
+            //System.out.println("Can't save screenshot");
+            //e.printStackTrace();
+        //} 
 	}
 
 	@AfterTest
