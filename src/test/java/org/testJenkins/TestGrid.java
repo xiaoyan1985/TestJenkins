@@ -50,10 +50,10 @@ public class TestGrid {
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
 			cap.setBrowserName("chrome");
 			driver = new RemoteWebDriver(new URL(Node), cap);
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 			driver.navigate().to(URL);
-			driver.manage().window().maximize();
+			//driver.manage().window().maximize();
 		}else {
 			throw new IllegalArgumentException("The Browser Type is Undefined");
 		}
