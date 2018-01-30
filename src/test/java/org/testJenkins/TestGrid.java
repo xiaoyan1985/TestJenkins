@@ -36,7 +36,7 @@ public class TestGrid {
 		//String Node = "http://172.17.0.7:4444/wd/hub";
 		String Node = "http://selenium-hub:4444/wd/hub";
 		//String URL = "http://tores3-test.router.default.svc.cluster.local/TORES/";
-		String URL = "http://172.17.0.8:8080/TORES/";
+		String URL = "http://172.17.0.8:8080/TORES/index.jsp";
 		//String URL = "https://www.baidu.com";
 		if (browser.equalsIgnoreCase("firefox")) {
 			System.out.println(" Executing on FireFox");
