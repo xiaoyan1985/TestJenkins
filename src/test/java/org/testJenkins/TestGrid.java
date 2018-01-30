@@ -39,16 +39,10 @@ public class TestGrid {
 			System.out.println(" Executing on FireFox");
 			DesiredCapabilities cap = DesiredCapabilities.firefox();
 			cap.setBrowserName("firefox");
-			System.out.println(Node);
 			driver = new RemoteWebDriver(new URL(Node), cap);
-			
-			//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
 			driver.navigate().to(URL);
-			
-			driver.manage().window().setSize(new Dimension(3600, 3400)); 
+			driver.manage().window().setSize(new Dimension(360, 340)); 
 			System.out.println("ready to screenshot");
-			//driver.manage().window().maximize();
 		} else if (browser.equalsIgnoreCase("chrome")) {
 			System.out.println(" Executing on CHROME");
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
