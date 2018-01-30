@@ -44,6 +44,7 @@ public class TestGrid {
 
 			driver.navigate().to(URL);
 			System.out.println("ready to screenshot");
+			driver.manage().window().setSize(new Dimension(3600, 3400)); 
 			//driver.manage().window().maximize();
 		} else if (browser.equalsIgnoreCase("chrome")) {
 			System.out.println(" Executing on CHROME");
@@ -53,6 +54,7 @@ public class TestGrid {
 			//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 			driver.navigate().to(URL);
+			driver.manage().window().setSize(new Dimension(3600, 3400)); 
 			//driver.manage().window().maximize();
 		}else {
 			throw new IllegalArgumentException("The Browser Type is Undefined");
