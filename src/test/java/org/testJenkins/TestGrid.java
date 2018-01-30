@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Dimension;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -30,8 +31,8 @@ public class TestGrid {
 	public void launchapp(String browser) throws MalformedURLException {
 		//String URL = "http://springmvc-wfproject5.openshift.axies.org/springmvc/";
 		//String Node = "http://192.168.40.73:4444/wd/hub";
-		String Node = "http://172.17.0.7:4444/wd/hub";
-		//String Node = "http://selenium-hub:4444/wd/hub";
+		//String Node = "http://172.17.0.7:4444/wd/hub";
+		String Node = "http://selenium-hub:4444/wd/hub";
 		//String URL = "http://tores3-test.router.default.svc.cluster.local/TORES/";
 		String URL = "https://www.baidu.com";
 		if (browser.equalsIgnoreCase("firefox")) {
