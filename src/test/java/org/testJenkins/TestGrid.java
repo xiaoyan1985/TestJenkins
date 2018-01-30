@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.openqa.selenium.Dimension;
 import org.apache.commons.io.FileUtils;
@@ -62,9 +64,15 @@ public class TestGrid {
 		System.out.println("catch titile");
 		String title = driver.getTitle();
 		System.out.println(title);
+		
+		Date date=new Date();
+        	SimpleDateFormat sdf = new SimpleDateFormat("HHmmss");
+		System.out.println("time：" + sdf.format(date));
+		String time=sdf.format(date);
+		
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(scrFile, new File("screenshot-firefox1.png"));
+            FileUtils.copyFile(scrFile, new File("screenshot"+time+".png"));
             System.out.println("screenshot Finish");
         } catch (IOException e) {
             System.out.println("Can't save screenshot");
