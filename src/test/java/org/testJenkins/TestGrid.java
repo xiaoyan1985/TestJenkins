@@ -37,8 +37,10 @@ public class TestGrid {
 			System.out.println(" Executing on FireFox");
 			DesiredCapabilities cap = DesiredCapabilities.firefox();
 			cap.setBrowserName("firefox");
+			System.out.println(Node);
 			driver = new RemoteWebDriver(new URL(Node), cap);
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			
+			//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 			driver.navigate().to(URL);
 			System.out.println("ready to screenshot");
