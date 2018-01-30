@@ -64,7 +64,7 @@ public class TestGrid {
 		System.out.println(title);
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(scrFile, new File("screenshot-firefox.png"));
+            FileUtils.copyFile(scrFile, new File("screenshot-firefox1.png"));
             System.out.println("screenshot Finish");
         } catch (IOException e) {
             System.out.println("Can't save screenshot");
