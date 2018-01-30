@@ -72,7 +72,7 @@ public class TestGrid {
 		
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(scrFile, new File("screenshot"+time+".png"));
+            FileUtils.copyFile(scrFile, new File("screenshot2.png"));
             System.out.println("screenshot Finish");
         } catch (IOException e) {
             System.out.println("Can't save screenshot");
