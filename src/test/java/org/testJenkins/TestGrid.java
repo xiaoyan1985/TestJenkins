@@ -41,6 +41,7 @@ public class TestGrid {
 			cap.setBrowserName("firefox");
 			driver = new RemoteWebDriver(new URL(Node), cap);
 			driver.navigate().to(URL);
+			System.out.println("ready to screenshot");
 			driver.manage().window().setSize(new Dimension(360, 340)); 
 			System.out.println("ready to screenshot");
 		} else if (browser.equalsIgnoreCase("chrome")) {
