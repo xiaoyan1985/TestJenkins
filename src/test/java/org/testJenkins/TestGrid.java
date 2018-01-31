@@ -35,9 +35,9 @@ public class TestGrid {
 		//String Node = "http://192.168.40.73:4444/wd/hub";
 		//String URL = "http://www.baidu.com";
 		//String Node = "http://selenium-hub:4444/wd/hub";
-		//String URL = "http://tores3-test.router.default.svc.cluster.local/TORES/index.jsp";
+		String URL = "http://tores3-test.router.default.svc.cluster.local/TORES/index.jsp";
 		//String URL = "http://www.yahoo.co.jp";
-		String URL = "http://172.17.0.8:8080/TORES/";
+		//String URL = "http://172.17.0.8:8080/TORES/";
 		String Node = "http://172.17.0.7:4444/wd/hub";
 		
 		if (browser.equalsIgnoreCase("firefox")) {
@@ -47,8 +47,8 @@ public class TestGrid {
 			driver = new RemoteWebDriver(new URL(Node), cap);
 			driver.navigate().to(URL);
 			//driver.manage().window().setSize(new Dimension(1024, 768)); 
-			//driver.manage().window().setSize(new Dimension(600, 400)); //ok
-			driver.manage().window().setSize(new Dimension(800, 500)); 	
+			driver.manage().window().setSize(new Dimension(600, 400)); //ok
+			//driver.manage().window().setSize(new Dimension(800, 500)); 	
 		} else if (browser.equalsIgnoreCase("chrome")) {
 			System.out.println(" Executing on CHROME");
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
