@@ -46,8 +46,8 @@ public class TestGrid {
 			cap.setBrowserName("firefox");
 			driver = new RemoteWebDriver(new URL(Node), cap);
 			driver.navigate().to(URL);
-			driver.manage().window().setSize(new Dimension(1360, 1020)); 
-			//driver.manage().window().setSize(new Dimension(600, 400)); 
+			//driver.manage().window().setSize(new Dimension(1360, 1020)); 
+			driver.manage().window().setSize(new Dimension(600, 400)); 
 		} else if (browser.equalsIgnoreCase("chrome")) {
 			System.out.println(" Executing on CHROME");
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
