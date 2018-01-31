@@ -45,7 +45,7 @@ public class TestGrid {
 			cap.setBrowserName("firefox");
 			driver = new RemoteWebDriver(new URL(Node), cap);
 			driver.navigate().to(URL);
-			driver.manage().window().setSize(new Dimension(1360, 1020)); 
+			//driver.manage().window().setSize(new Dimension(1360, 1020)); 
 		} else if (browser.equalsIgnoreCase("chrome")) {
 			System.out.println(" Executing on CHROME");
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
@@ -73,14 +73,14 @@ public class TestGrid {
 		String time=sdf.format(date);
 		String now="screenshot"+time+".png";
 		
-		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        try {
-            FileUtils.copyFile(scrFile, new File(now));
-            System.out.println("screenshot Finish");
-        } catch (IOException e) {
-            System.out.println("Can't save screenshot");
-            e.printStackTrace();
-        } 
+		//File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        //try {
+            //FileUtils.copyFile(scrFile, new File(now));
+            //System.out.println("screenshot Finish");
+        //} catch (IOException e) {
+            //System.out.println("Can't save screenshot");
+            //e.printStackTrace();
+        //} 
 	}
 
 	@AfterTest
