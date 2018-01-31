@@ -74,14 +74,14 @@ public class TestGrid {
 		String time=sdf.format(date);
 		String now="screenshot"+time+".png";
 		
-		//File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        //try {
-            //FileUtils.copyFile(scrFile, new File(now));
-            //System.out.println("screenshot Finish");
-        //} catch (IOException e) {
-            //System.out.println("Can't save screenshot");
-            //e.printStackTrace();
-        //} 
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(scrFile, new File(now));
+            System.out.println("screenshot Finish");
+        } catch (IOException e) {
+            System.out.println("Can't save screenshot");
+            e.printStackTrace();
+        } 
 	}
 
 	@AfterTest
