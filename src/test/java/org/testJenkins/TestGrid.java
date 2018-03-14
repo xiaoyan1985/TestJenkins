@@ -33,7 +33,7 @@ public class TestGrid {
 	public void launchapp(String browser) throws MalformedURLException {
 		//String URL = "http://springmvc-wfproject5.openshift.axies.org/springmvc/";
 		//String Node = "http://192.168.40.73:4444/wd/hub";
-		String URL = "http://www.baidu.com";
+		String URL = "http://www.yahoo.co.jp";
 		//String Node = "http://selenium-hub:4444/wd/hub";
 		String Node = "http://10.130.1.150:4444/wd/hub";
 		//String URL = "http://tores3-test.router.default.svc.cluster.local/TORES/index.jsp";
