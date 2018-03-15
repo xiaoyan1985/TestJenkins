@@ -35,7 +35,8 @@ public class TestGrid {
 		//String Node = "http://192.168.40.73:4444/wd/hub";
 		//String URL = "http://www.yahoo.co.jp";
 		//String Node = "http://selenium-hub:4444/wd/hub";
-		String Node = "http://10.130.1.229:4444/wd/hub";
+		//String Node = "http://10.130.1.229:4444/wd/hub";
+		String Node = "http://selenium-hub:4444/wd/hub";
 		//String URL = "http://tores3-test.router.default.svc.cluster.local/TORES/index.jsp";
 		//String URL = "http://www.yahoo.co.jp";
 		String URL = "http://10.130.1.187:8080/TORES/index.jsp";
