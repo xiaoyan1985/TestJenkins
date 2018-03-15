@@ -39,7 +39,7 @@ public class TestGrid {
 		String Node = "http://selenium-hub:4444/wd/hub";
 		//String URL = "http://tores3-test.router.default.svc.cluster.local/TORES/index.jsp";
 		//String URL = "http://www.yahoo.co.jp";
-		String URL = "http://10.130.1.187:8080/TORES/index.jsp";
+		String URL = "http://10.130.1.187:8080/TORES/";
 		//String Node = "http://10.131.1.112:4444/wd/hub";
 		
 		if (browser.equalsIgnoreCase("firefox")) {
